@@ -7,6 +7,13 @@ oldIFS="$IFS"							#The Internal Field Separator (IFS) that is used for word sp
 IFS=$'\n' arr=($(<info1.txt))			#Words produced from (IFS) are strored into an array 'arr' 
 IFS="$oldIFS"
 
+FILE=`dirname $0`/info1.txt
+
+zenity --text-info \
+       --title="Today News" \
+       --filename=$FILE \
+       --width=600 --height=400
+
 echo "World News"
 for (( i=0; i<3; i++ ))					#Running the for loop to extract the data of World new for array 'arr'
 do

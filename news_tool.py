@@ -17,13 +17,16 @@ for i in range(0,3):
     dub_titles.append(str(titles[i]))
     dub_description.append(str(description[i]))
 
-fo=open("info1.txt","w")                            #Writing down all the values in a file 'info1.txt' which were stored in the respective lists
-for item in dub_titles:
-    fo.write("%s\n" % item)
+fo=open("info1.txt","w")
+fo.write("\t\t\t\tWorld News\n\n")
 fo.close()
 
 fo=open("info1.txt","a")
-for item in dub_description:
-    fo.write("%s\n" % item)
+for i in range(0,3):
+    fo.write("Title: %s\n\n" % dub_titles[i])
+    fo.write("Description: %s\n" % dub_description[i])
 fo.close()
 
+fo=open("info1.txt","a")
+fo.write("\n\n")
+fo.close()

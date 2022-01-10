@@ -12,16 +12,17 @@ for i in r1.json()['articles']:						#Running a for loop on r.json() to access c
 
 dub_titles=[]
 dub_description=[]
+
+fo=open("info1.txt","a")
+fo.write("\t\t\t\tSports\n\n")
+fo.close()
+
 for i in range(0,3):
     dub_titles.append(str(titles[i]))
     dub_description.append(str(description[i]))
 
-fo=open("info1.txt","a")							#Writing down all the values in a file 'info1.txt' which were stored in the respective lists
-for item in dub_titles:
-    fo.write("%s\n" % item)
-fo.close() 
-
 fo=open("info1.txt","a")
-for item in dub_description:
-    fo.write("%s\n" % item)
+for i in range(0,3):
+    fo.write("Title: %s\n\n" % dub_titles[i])
+    fo.write("Description: %s\n" % dub_description[i])
 fo.close()

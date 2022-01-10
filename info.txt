@@ -1,0 +1,5 @@
+
+
+Minimum Temperature: 0.48
+Maximum Temperature: 5.28
+Temperature description: overcast clouds

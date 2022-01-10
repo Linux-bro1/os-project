@@ -13,9 +13,10 @@
 #Storing hours of the day for the dropdown menu 
 array=( 0 1 2 3 4 5 6 7 8 9 10 11 12 )
 #Storing ringtone options for the dropdown menu 
-ring=(0 Bliss Celestial Counterpoint Latin Marimbach Soul Supreme Ubuntu)
+# ring=(0 Bliss Celestial Counterpoint Latin Marimbach Soul Supreme Ubuntu)
+ring=(0 CallingSanta Iphone XiaomiMi2 wakeupAlarmTone)
 #am/pm option
-ap=(am pm)
+ap=( 0 am pm )
 
 #input hours, store in 'H'
 H=$(zenity --entry --title "Alarm clock" --text "${array[@]}" --text "Hour")
@@ -38,7 +39,11 @@ echo $A
 p="pm"           
 if [ "$T" == "$p" ] 
 then
-newH=$(echo " $H+12 " |bc)
+newH=$(($H+12))
+if [[ $H == 12  ]]
+then
+newH=$H
+fi
 else
 newH=$H
 fi
@@ -47,7 +52,7 @@ fi
 curH=`date +"%H"`
 curM=`date +"%M"`
 
-echo "System hour: $curH; System minute: $curM"
+# echo "System hour: $curH; System minute: $curM"
 
 y=24
 x=59
@@ -56,7 +61,7 @@ if [ "$newH" -gt "$y" ]
 then
 while [ "$newH" -gt "$y" ]
 do
-read -p "error please enter appropriate value" H
+read -p "Error!!! please enter appropriate value for hours: " H
 if [ "$T" == "$p" ] 
 then
 newH=$(echo " $H+12 " |bc)
@@ -70,7 +75,7 @@ if [ "$M" -gt "$x" ]
 then
 while [ "$M" -gt "$x" ]
 do
-read -p "error please enter appropriate value" M
+read -p "Error!!! please enter appropriate value for minute: " M
 done
 
 fi
@@ -80,37 +85,37 @@ fi
 #finds the hour difference
 if((curH>newH))
 then
-diffH=$(echo " 24- $curH + $newH ")
+# diffH=$(echo " 24- $curH + $newH ")
+diffH=$((24-$curH+$newH))
 else
-diffH=$(echo " $newH - $curH ")
+diffH=$(($newH-$curH))
 fi 
 
 #finds the minute difference
 if((curM>M))
 then
-diffM=$(echo "60- $curM + $M ")
+diffM=$((60-$curM+$M))
 else
-diffM=$(echo " $M - $curM ")
+diffM=$(($M-$curM))
 fi 
 
 #calculates difference in time in seconds and store in 'total'
-sechr=$(echo " $diffH * 3600 ")
-secmin=$(echo " $diffM * 60 ")
  
 secondH=$((diffH*3600))
 secondM=$((diffM*60))
 total=$((secondH+secondM))
-printf "time left for alarm to ring is %d:%d\n" $diffH $diffM
+
+echo -e "Time left for alarm to ring is : $diffH : $diffM (HH:MM)\n"
+
 #do nothing for 'total' number of seconds
+zenity --info --title="Time Left" --text="Time left for alarm to ring is : $diffH : $diffM (HH:MM)" --width=600 --height=400
 sleep $total
 
 #run an infinite loop until ctrl-Z is pressed
 x=1
 while [ $x -gt 0 ] 
 do
-#play the .ogg file from the /usr/share/sounds/ubuntu/ringtones/ directory
 echo "Press Control Z to switch off alarm"
-# play "/usr/share/sounds/ubuntu/ringtones/$A.ogg"
-play "/usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga"
-# play "./Calling-Santa.mp3"
+play "/home/aman/oslab/OSproject/os_project/$A.ogg"
+
 done
