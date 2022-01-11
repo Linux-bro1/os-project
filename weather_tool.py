@@ -10,9 +10,11 @@ r = requests.get(URL)                                                   #GET req
 
 temp_min = r.json()['main']['temp_min']
 fo=open("info.txt","w")                                                 #Writing down all the values in a file 'info.txt' which were stored in the respective lists
+fo.write("%s today temperature" % CITY_NAME )
+fo.close()                #Closing the file
+fo=open("info.txt","a")                                                 #Writing down all the values in a file 'info.txt' which were stored in the respective lists
 fo.write("\n\nMinimum Temperature: %s\n" % temp_min)
-fo.close()  
-                                                            #Closing the file
+fo.close()                #Closing the file
 temp_max = r.json()['main']['temp_max']
 fo=open("info.txt","a")                                                 #Writing down all the values in a file 'info.txt' which were stored in the respective lists
 fo.write("\nMaximum Temperature: %s\n" % temp_max)

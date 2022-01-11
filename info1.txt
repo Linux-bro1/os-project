@@ -1,37 +1,26 @@
-				World News
+World News
 
-Title: Novak Djokovic: Tennis star to fight deportation in Australia court
+Title: Djokovic 'focused' on Australian Open
 
-Description: The tennis star challenges his visa's cancellation on Covid vaccination grounds ahead of the Australian Open.
-Title: Novak Djokovic: Judge raises concerns over tennis star's treatment by border officers
+Description: Novak Djokovic says he is focused on playing in the Australian Open next week after winning a court battle that overturned his visa cancellation.
+Title: Kazakhstan unrest was coup attempt, says president
 
-Description: Anthony Kelly is presiding over the tennis star's challenge to the cancellation of his Australian visa.
-Title: Bob Saget: US actor and comedian found dead aged 65
+Description: President Tokayev says a hunt for "terrorists" is continuing and Kazakhstan will soon provide proof.
+Title: Covid-19: Common cold may give some protection, study suggests
 
-Description: The Full House star was found dead in his hotel room in Orlando, where he was on tour, police say.
+Description: Researchers say immune cells made to defend the body against some colds could help stave off Covid.
 
 
 				Technology
 
-Title: Australian judge reinstates Novak Djokovic's visa, orders his release from hotel quarantine
+Title: Miami Dolphins fire coach Brian Flores after three seasons; GM Chris Grier to remain
 
-Description: An Australian judge has reinstated Novak Djokovic's visa, which was canceled shortly after he arrived in Melbourne last week when officials decided he didn't meet the criteria for an exemption to the country's strict COVID-19 vaccination rules for entry.
-Title: Las Vegas Raiders win on OT field goal to eliminate rival Los Angeles Chargers, secure playoff berth
+Description: Brian Flores was fired by the Dolphins after three seasons on Monday but owner and Michigan alumnus Stephen Ross says he is not targeting Jim Harbaugh as his new coach.
+Title: Minnesota Vikings fire head coach Mike Zimmer, GM Rick Spielman
 
-Description: The Las Vegas Raiders are headed to the playoffs for the first time since 2016 after beating the AFC West rival Los Angeles Chargers in a white-knuckle overtime affair Sunday night at Allegiant Stadium.
-Title: Golden State Warriors' Klay Thompson scores 17 points, punctuates return with thunderous dunk
+Description: The Vikings have fired coach Mike Zimmer and general manager Rick Spielman, signaling a regime overhaul after eight seasons.
+Title: Source - Chicago Bears fire Matt Nagy after 4 years following 6-11 season
 
-Description: Klay Thompson scored 17 points in 20 minutes in his first action in nearly 1,000 days as the Warriors beat the Cavs on Sunday night.
+Description: The Chicago Bears fired coach Matt Nagy on Monday, ending his tenure after the team slumped to a 6-11 record this season, a source told ESPN's Adam Schefter.
 
 
-				Sports
-
-Title: Australian judge reinstates Novak Djokovic's visa, orders his release from hotel quarantine
-
-Description: An Australian judge has reinstated Novak Djokovic's visa, which was canceled shortly after he arrived in Melbourne last week when officials decided he didn't meet the criteria for an exemption to the country's strict COVID-19 vaccination rules for entry.
-Title: Las Vegas Raiders win on OT field goal to eliminate rival Los Angeles Chargers, secure playoff berth
-
-Description: The Las Vegas Raiders are headed to the playoffs for the first time since 2016 after beating the AFC West rival Los Angeles Chargers in a white-knuckle overtime affair Sunday night at Allegiant Stadium.
-Title: Golden State Warriors' Klay Thompson scores 17 points, punctuates return with thunderous dunk
-
-Description: Klay Thompson scored 17 points in 20 minutes in his first action in nearly 1,000 days as the Warriors beat the Cavs on Sunday night.

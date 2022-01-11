@@ -13,8 +13,8 @@
 #Storing hours of the day for the dropdown menu 
 array=( 0 1 2 3 4 5 6 7 8 9 10 11 12 )
 #Storing ringtone options for the dropdown menu 
-# ring=(0 Bliss Celestial Counterpoint Latin Marimbach Soul Supreme Ubuntu)
-ring=(0 CallingSanta Iphone XiaomiMi2 wakeupAlarmTone)
+# ring=(0 CallingSanta Iphone XiaomiMi2 wakeupAlarmTone )
+ring=( 0 CallingSanta Iphone XiaomiMi2 wakeupAlarmTone )
 #am/pm option
 ap=( 0 am pm )
 
@@ -64,7 +64,7 @@ do
 read -p "Error!!! please enter appropriate value for hours: " H
 if [ "$T" == "$p" ] 
 then
-newH=$(echo " $H+12 " |bc)
+newH=$((H+12))
 else
 newH=$H
 fi
@@ -85,18 +85,17 @@ fi
 #finds the hour difference
 if((curH>newH))
 then
-# diffH=$(echo " 24- $curH + $newH ")
-diffH=$((24-$curH+$newH))
+diffH=$((24-curH+newH))
 else
-diffH=$(($newH-$curH))
+diffH=$((newH-curH))
 fi 
 
 #finds the minute difference
 if((curM>M))
 then
-diffM=$((60-$curM+$M))
+diffM=$((60-curM+M))
 else
-diffM=$(($M-$curM))
+diffM=$((M-curM))
 fi 
 
 #calculates difference in time in seconds and store in 'total'
